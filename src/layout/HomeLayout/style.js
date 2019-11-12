@@ -9,42 +9,39 @@ export const Container = styled.div`
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
-  background: #d44439;
-  height: 6.4vh;
+  padding: 10px;
+  background: #fff;
+  height: 50px;
   align-items: center;
-  color: #f1f1f1;
-  .title {
-    font-size: 5.3vw;
-    height: 100%;
-    line-height: 6.4vh;
+  margin-bottom: 8px;
+  color: #000;
+  .right,
+  .left {
+    height: 50px;
+    line-height: 50px;
   }
   .iconfont {
-    font-size: 6.7vw;
-    height: 100%;
-    line-height: 6.4vh;
+    font-size: 26px;
   }
 `;
 
 export const Tabs = styled.div`
-  height: 6.3vh;
+  height: 50px;
   display: flex;
-  background: #d44439;
+  background: #fff;
+  flex: 1;
+  padding: 0 30px;
   a {
     flex: 1;
     padding: 2px 0;
-    font-size: 3.73vw;
-    color: #e4e4e4;
+    font-size: 16px;
+    color: #000;
     justify-content: center;
     align-items: center;
     display: flex;
     &.actived {
-      span {
-        padding: 3px 0;
-        font-weight: 700;
-        color: #f1f1f1;
-        border-bottom: 2px solid #f1f1f1;
-      }
+      font-weight: 700;
+      font-size: 18px;
     }
   }
 `

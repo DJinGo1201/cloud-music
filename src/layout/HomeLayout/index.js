@@ -9,21 +9,24 @@ function HomeLayout(props) {
   return (
     <Container>
       <Header>
-        <span className="iconfont">&#xe65c;</span>
-        <span className="title">云音乐</span>
-        <span className="iconfont">&#xe62b;</span>
+        <div className="left">
+          <span className="iconfont">&#xe65c;</span>
+        </div>
+        <Tabs>
+          <NavLink to="/discover" activeClassName="actived">
+            <span className="item">发现</span>
+          </NavLink>
+          <NavLink to="/radio" activeClassName="actived">
+            <span className="item">电台</span>
+          </NavLink>
+          <NavLink to="rank" activeClassName="actived">
+            <span className="item">排行榜</span>
+          </NavLink>
+        </Tabs>
+        <div className="right">
+          <span className="iconfont">&#xe62b;</span>
+        </div>
       </Header>
-      <Tabs>
-        <NavLink to="/discover" activeClassName="actived">
-          <span className="item">发现</span>
-        </NavLink>
-        <NavLink to="/radio" activeClassName="actived">
-          <span className="item">电台</span>
-        </NavLink>
-        <NavLink to="rank" activeClassName="actived">
-          <span className="item">排行榜</span>
-        </NavLink>
-      </Tabs>
       <TabPane>
         {renderRoutes(route.routes)}
       </TabPane>

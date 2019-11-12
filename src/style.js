@@ -29,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1;
   }
   html, body{
-    background: #f2f3f4;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     -webkit-tap-highlight-color: transparent;
   }
